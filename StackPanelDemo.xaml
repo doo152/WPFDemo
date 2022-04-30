@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPFDemo.StackPanelDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDemo"
+        mc:Ignorable="d"
+        Title="Grid PanelDemo" Height="350" Width="450">
+    <Grid>
+        <GroupBox Header="StackPanel Demo" Margin="10" FontSize="20" BorderBrush="Black" Background="Aqua">
+            <StackPanel Orientation="Vertical">
+                <CheckBox Name="one" Content="ASP.Net VIP Student" Margin="20,20,0,0"/>
+                <CheckBox Name="Two" Content="C# VIP Student" Margin="20,20,0,0"/>
+                <CheckBox Content="ASP.Net VIP Teacher" Margin="20,20,0,0"/>
+                <CheckBox Content="C# VIP Teacher" Margin="20,20,0,20"/>
+                <StackPanel Orientation="Horizontal" Height="60"  HorizontalAlignment="Center">
+                    
+                        <Button Name="btnSubmit" Content="Submit" Margin="8" Width="85"/>
+                        <Button Name="btnReset" Content="Reset" Margin="8" Width="85"/>
+                   
+                   
+                </StackPanel>
+            </StackPanel>
+
+        </GroupBox>
+    </Grid>
+</Window>
